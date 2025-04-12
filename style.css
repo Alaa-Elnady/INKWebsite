@@ -9,7 +9,11 @@ body {
 li {
   list-style: none;
 }
-
+.imagesContainer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
 /* 
 MARK: Aside
 */
@@ -22,6 +26,10 @@ MARK: Aside
   padding: 3vh;
   color: #818080;
   /* background-color: aquamarine; */
+}
+img[alt="INK Logo"] {
+  width: 9vw;
+  height: 8vh;
 }
 #websiteLinksContainer ul {
   width: 10vw;
@@ -57,6 +65,18 @@ MARK: Aside
   padding: 15px 0px;
   font-weight: bold;
 }
+#flickerSection {
+  width: 10vw;
+}
+#flickerSection .imagesContainer {
+  width: 12vw;
+  margin-top: 10px;
+}
+#flickerSection img {
+  width: 30%;
+  margin-bottom: 10px;
+  height: 10vh;
+}
 /* 
   MARK:Content
 */
@@ -82,4 +102,13 @@ nav li:hover {
   border-radius: 5px;
   cursor: pointer;
   background-color: #b39f6c;
+}
+#allPageContainer img {
+  width: 25%;
+  height: 30vh;
+  opacity: 0.5;
+}
+#allPageContainer img:hover {
+  opacity: 1;
+  transform: scale(1.1);
 }
